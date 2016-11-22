@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="vendor/jquery-ui/jquery-ui.js"></script>
+    <script src="vendor/angular/angular.js"></script>
+    <script src="vendor/angular-route/angular-route.js"></script>
+    <script src="app/controller/baiduCtr.js"></script>
+    <script src="app/controller/sinaCtr.js"></script>
+    <script src="app/controller/sohuCtr.js"></script>
+    <script src="app/controller/taobaoCtr.js"></script>
+    <script src="app/app.js"></script>
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="vendor/bootstrap/dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="assets/css/test3.css">
+    <title></title>
+
+</head>
+<body>
+<div class="container-fluid">
+    <div class="pull-left">
+        <div class="sidebar-nav">
+            <ul class="nav nav-list">
+                <li class="nav-header">Frontend</li>
+                <li class="active"><a href="#/webside/baidu">baidu</a></li>
+                <li><a href="#/webside/sina">sina</a></li>
+                <li class="nav-header">Backend</li>
+                <li><a href="#/webside/taobao">taobao</a></li>
+                <li><a href="#/webside/sohu">sohu</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="pull-right" ng-view=""></div>
+</div>
+</body>
+</html>
